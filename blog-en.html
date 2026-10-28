@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2Q19CJBPQB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2Q19CJBPQB');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Marine Blog & Yacht Engineering Guides | DM MARIN</title>
+<meta name="description" content="Expert marine guides for yacht owners and captains: Volvo Penta, MAN, MTU, Yanmar engine maintenance, Onan/Kohler generator service, and lithium conversion.">
+<link rel="canonical" href="https://dmmarin.com/blog-en.html">
+<link rel="alternate" hreflang="tr" href="https://dmmarin.com/blog.html">
+<link rel="alternate" hreflang="en" href="https://dmmarin.com/blog-en.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#071b2b">
+<link rel="stylesheet" href="service-page.css">
+<link rel="stylesheet" href="brand-page.css">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<script src="assets/data/blog-catalog.js"></script>
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Marine Blog & Yacht Engineering Guides | DM MARIN">
+<meta property="og:description" content="Expert marine guides for yacht owners and captains: Volvo Penta, MAN, MTU, Yanmar engine maintenance, Onan/Kohler generator service, and lithium conversion.">
+<meta property="og:url" content="https://dmmarin.com/blog-en.html">
+<meta property="og:image" content="https://dmmarin.com/assets/dm-marin-logo-v2.webp">
+<style>
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+.blog-card {
+  background: #fff;
+  border: 1px solid #dce7ea;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(3,22,35,0.04);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(3,22,35,0.1);
+}
+.blog-card-img {
+  position: relative;
+  height: 200px;
+  background: #071b2b;
+  overflow: hidden;
+}
+.blog-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.blog-card:hover .blog-card-img img {
+  transform: scale(1.04);
+}
+.blog-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(7,27,43,0.85);
+  color: #19c7df;
+  backdrop-filter: blur(8px);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 800;
+  border: 1px solid rgba(25,199,223,0.3);
+}
+.blog-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.blog-card h3 {
+  margin: 0 0 10px;
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 800;
+  color: #071b2b;
+}
+.blog-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+.blog-card h3 a:hover {
+  color: #087f93;
+}
+.blog-card p {
+  margin: 0 0 16px;
+  color: #475569;
+  font-size: 13.5px;
+  line-height: 1.6;
+  flex: 1;
+}
+.blog-read-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #087f93;
+  font-weight: 800;
+  font-size: 13px;
+  text-decoration: none;
+  margin-top: auto;
+}
+.blog-read-link:hover {
+  text-decoration: underline;
+}
+.filter-tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.filter-btn {
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.filter-btn.active, .filter-btn:hover {
+  background: #071b2b;
+  color: #fff;
+  border-color: #071b2b;
+}
+.search-box {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid #cbd5e1;
+  font-size: 13.5px;
+  min-width: 260px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.search-box:focus {
+  border-color: #087f93;
+  box-shadow: 0 0 0 3px rgba(8,127,147,0.15);
+}
+</style>
+<!-- Vercel Web Analytics -->
+<script>
+window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="container header-in">
+    <a class="logo" href="index.html"><img src="assets/dm-marin-logo-v2.webp" alt="DM MARİN Profesyonel Marin Servis" width="260" height="80"></a>
+    <nav class="nav">
+      <a href="index.html#hizmetler">Services</a>
+      <a href="index.html#markalar">Brands</a>
+      <a href="blog-en.html" style="color:#087f93;font-weight:700">Blog & Guides</a>
+      <div class="lang-switch" style="display:flex;gap:4px">
+        <a href="blog.html" class="lang-btn " style="text-decoration:none;padding:3px 8px;border-radius:4px;border:1px solid #cbd5e1;font-size:11px;font-weight:700;background:#fff;color:#071b2b">TR</a>
+        <a href="blog-en.html" class="lang-btn active" style="text-decoration:none;padding:3px 8px;border-radius:4px;border:1px solid #cbd5e1;font-size:11px;font-weight:700;background:#071b2b;color:#fff">EN</a>
+      </div>
+      <a class="cta" href="index.html#randevu">Request Service</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" style="min-height:360px">
+  <img src="assets/motor-mekanik-bakim.webp" alt="DM MARİN Teknik Blog" width="1672" height="941" fetchpriority="high">
+  <div class="container hero-copy">
+    <span class="eyebrow">Knowledge Base · Marine Engineering</span>
+    <h1>Marine Blog & Engineering Guides</h1>
+    <p>Authoritative technical guides for marine engines, generators, lithium battery systems, and winter lay-up.</p>
+  </div>
+</section>
+
+<section class="section" style="background:var(--paper);padding:40px 0 80px">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px">
+      <h2 style="margin:0;font-size:24px" id="blog-total-count-header">All Technical Guides (120 Guides · 63 TR + 57 EN)</h2>
+      <input type="text" class="search-box" id="blog-search-input" placeholder="🔍 Search technical guides..." onkeyup="filterBlogSearch(this.value)">
+    </div>
+
+            <div class="filter-tabs" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:16px;padding-bottom:12px;border-bottom:1px solid #e2e8f0">
+      <span style="font-size:12px;font-weight:800;color:#64748b;margin-right:4px">LANGUAGE:</span>
+      <button class="filter-btn lang-filter active" onclick="filterBlogLanguage('all', this)">🌐 All (120 Guides · 63 TR + 57 EN)</button>
+      <button class="filter-btn lang-filter" onclick="filterBlogLanguage('en', this)">🇬🇧 English (57 Guides)</button>
+      <button class="filter-btn lang-filter" onclick="filterBlogLanguage('tr', this)">🇹🇷 Turkish (57 Guides)</button>
+    </div>
+
+    <div class="filter-tabs" style="margin-top:12px">
+      <span style="font-size:12px;font-weight:800;color:#64748b;margin-right:4px">CATEGORY:</span>
+      <button class="filter-btn cat-filter active" onclick="filterBlogCategory('all', this)">All Categories</button>
+      <button class="filter-btn cat-filter" onclick="filterBlogCategory('Engine & Mechanical', this)">Engine & Mechanical</button>
+      <button class="filter-btn cat-filter" onclick="filterBlogCategory('Generator & Power', this)">Generator</button>
+      <button class="filter-btn cat-filter" onclick="filterBlogCategory('Electrical & Battery', this)">Electrical & Battery</button>
+      <button class="filter-btn cat-filter" onclick="filterBlogCategory('Propulsion & Hydraulics', this)">Propulsion & Deck</button>
+      <button class="filter-btn cat-filter" onclick="filterBlogCategory('Winterizing & Corrosion', this)">Winterizing</button>
+      <button class="filter-btn cat-filter" onclick="filterBlogCategory('Diagnostics & Troubleshooting', this)">Diagnostics</button>
+    </div>
+
+    <div class="blog-grid" id="blog-grid-container">
+      <!-- Dynamically & progressively rendered from assets/data/blog-catalog.js -->
+    </div>
+    <div id="blog-load-more-wrapper" style="text-align:center;margin-top:40px;width:100%">
+      <button id="blog-load-more-btn" class="btn primary" style="background:#0ea5e9;border-color:#0284c7;color:#fff;padding:12px 34px;font-size:15px;font-weight:700;border-radius:10px;cursor:pointer;box-shadow:0 4px 14px rgba(14,165,233,0.3)" onclick="loadMoreBlogCards()">
+        ⬇ Load More Technical Guides (+24)
+      </button>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Global Footer -->
+<footer style="background:#04131f;color:#94a3b8;padding:45px 0 35px;border-top:1px solid rgba(255,255,255,0.08);font-size:13px;margin-top:60px">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px;margin-bottom:22px">
+      <div style="display:flex;align-items:center;gap:15px">
+        <a href="index-en.html"><img src="assets/dm-marin-logo-v2.webp" alt="DM MARİN" style="height:44px;width:auto;object-fit:contain"></a>
+        <div>
+          <p style="margin:0 0 4px;color:#fff;font-weight:700">DM MARİN MARINE ENGINEERING &amp; YACHT SERVICES</p>
+          <p style="margin:0;font-size:12px;color:#94a3b8">Kalamış · Fenerbahçe · Ataköy · Pendik · Tuzla · Bosphorus · Bodrum · Marmaris · Göcek</p>
+        </div>
+      </div>
+      <div>
+        <a href="tel:+905322334698" style="color:#19c7df;font-weight:700;text-decoration:none;margin-right:15px">📞 +90 (532) 233 46 98</a>
+        <a href="https://wa.me/905322334698" target="_blank" style="background:#129a66;color:#fff;padding:6px 14px;border-radius:6px;font-weight:700;text-decoration:none;font-size:12.5px">💬 WhatsApp</a>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.08);padding-top:18px;font-size:11.5px;line-height:1.75;color:#64748b">
+      <b>Legal Notice &amp; Trademark Disclaimer:</b> DM MARİN is an independent marine engineering and technical maintenance provider. All brand names, trademarks, logos, and model designations mentioned on this website (including Volvo Penta, Yanmar, MAN, Caterpillar, Cummins Onan, Kohler, MTU, Seakeeper, Victron Energy, Raymarine) are the property of their respective trademark holders. Their use is strictly for descriptive and referential purposes to indicate compatibility and the scope of our maintenance, diagnostic, and repair capabilities, in full compliance with nominative fair use doctrine and international intellectual property law. DM MARİN is not an authorized distributor or franchised dealer for these manufacturers.
+    </div>
+    <div style="margin-top:14px;text-align:center;font-size:11.5px;color:#475569">
+      © 2026 DM MARİN. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+let currentCategory = 'all';
+let currentLang = 'all';
+let searchQuery = '';
+let renderedLimit = 24;
+const PAGE_SIZE = 24;
+
+function renderBlogCards() {
+  const container = document.getElementById('blog-grid-container');
+  if (!container) return;
+
+  const catalog = (typeof window.getUnifiedBlogCatalog === 'function') 
+    ? window.getUnifiedBlogCatalog() 
+    : (window.DM_BLOG_BASE_CATALOG || []);
+
+  const totalCount = catalog.length;
+
+  const filtered = catalog.filter(art => {
+    const cardCat = art.category || '';
+    const cardLang = art.lang || 'en';
+    const cardText = ((art.title || '') + ' ' + (art.desc || '') + ' ' + (art.badge || '')).toLowerCase();
+
+    const matchCat = (currentCategory === 'all' || 
+                      cardCat.toLowerCase().includes(currentCategory.toLowerCase()) || 
+                      currentCategory.toLowerCase().includes(cardCat.toLowerCase()));
+    const matchLang = (currentLang === 'all' || cardLang === currentLang);
+    const matchSearch = (!searchQuery || cardText.includes(searchQuery));
+
+    return matchCat && matchLang && matchSearch;
+  });
+
+  const toDisplay = filtered.slice(0, renderedLimit);
+
+  if (toDisplay.length === 0) {
+    container.innerHTML = `
+      <div style="grid-column:1/-1;text-align:center;padding:60px 20px;background:#fff;border-radius:12px;border:1px dashed #cbd5e1">
+        <p style="font-size:18px;color:#475569;margin-bottom:8px">🔍 No articles match your search criteria.</p>
+        <small style="color:#94a3b8">Try different search keywords or switch category to "All Categories".</small>
+      </div>
+    `;
+  } else {
+    container.innerHTML = toDisplay.map(art => {
+      const isEn = art.lang === 'en';
+      const badgeIcon = isEn ? '🇬🇧' : '🇹🇷';
+      const readText = isEn ? 'Read Guide →' : 'Rehberi Oku →';
+      const readMeta = isEn ? 'Certified Guide' : 'Engineering Guide';
+
+      return `
+        <article class="blog-card" data-category="${art.category || 'Engine & Mechanical'}" data-lang="${art.lang || 'en'}">
+          <div class="blog-card-img">
+            <img src="${art.img || 'assets/motor-mekanik-bakim.webp'}" alt="${art.title}" loading="lazy">
+            <span class="blog-badge">${badgeIcon} ${art.badge || art.category}</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span>⏱ ${art.readTime || (isEn ? '6 min read' : '6 dk okuma')}</span>
+              <span>•</span>
+              <span>${readMeta}</span>
+            </div>
+            <h3><a href="${art.url || '#'}">${art.title}</a></h3>
+            <p>${art.desc || ''}</p>
+            <a class="blog-read-link" href="${art.url || '#'}">${readText}</a>
+          </div>
+        </article>
+      `;
+    }).join('');
+  }
+
+  const countHeader = document.getElementById('blog-total-count-header');
+  if (countHeader) {
+    countHeader.textContent = `All Technical Guides (${filtered.length} Guides Displayed · Total ${totalCount} Guides)`;
+  }
+
+  const loadMoreBtn = document.getElementById('blog-load-more-btn');
+  const loadMoreWrapper = document.getElementById('blog-load-more-wrapper');
+  if (loadMoreBtn && loadMoreWrapper) {
+    if (renderedLimit < filtered.length) {
+      loadMoreWrapper.style.display = 'block';
+      loadMoreBtn.textContent = `⬇ Load More Technical Guides (+${Math.min(PAGE_SIZE, filtered.length - renderedLimit)})`;
+    } else {
+      loadMoreWrapper.style.display = 'none';
+    }
+  }
+}
+
+function loadMoreBlogCards() {
+  renderedLimit += PAGE_SIZE;
+  renderBlogCards();
+}
+
+function filterBlogCategory(cat, btn) {
+  const btns = document.querySelectorAll('.cat-filter');
+  btns.forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+
+  currentCategory = cat;
+  renderedLimit = PAGE_SIZE;
+  renderBlogCards();
+}
+
+function filterBlogLanguage(lang, btn) {
+  const btns = document.querySelectorAll('.lang-filter');
+  btns.forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+
+  currentLang = lang;
+  renderedLimit = PAGE_SIZE;
+  renderBlogCards();
+}
+
+function filterBlogSearch(val) {
+  searchQuery = (val || '').toLowerCase().trim();
+  renderedLimit = PAGE_SIZE;
+  renderBlogCards();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderBlogCards();
+});
+</script>
+</body>
+</html>

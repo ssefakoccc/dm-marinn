@@ -1,0 +1,123 @@
+{
+  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "all"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(self), microphone=(), geolocation=(self)"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        }
+      ]
+    },
+    {
+      "source": "/admin.html",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, no-cache, must-revalidate, max-age=0"
+        }
+      ]
+    },
+    {
+      "source": "/(stok|stok.html)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+        },
+        {
+          "key": "Pragma",
+          "value": "no-cache"
+        },
+        {
+          "key": "Expires",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/kalamis-anadolu-yakasi-marin-servis.html",
+      "destination": "/kalamis-fenerbahce-marin-servis.html",
+      "permanent": true
+    },
+    {
+      "source": "/atakoy-west-istanbul-marin-servis.html",
+      "destination": "/atakoy-west-istanbul-marina-servis.html",
+      "permanent": true
+    },
+    {
+      "source": "/tuzla-pendik-marin-servis.html",
+      "destination": "/tuzla-pendik-marinturk-marin-servis.html",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/admin/service-requests/:id",
+      "destination": "/api/admin/service-requests?id=:id"
+    },
+    {
+      "source": "/api/admin/erp/suppliers",
+      "destination": "/api/admin/erp/customers?type=suppliers"
+    },
+    {
+      "source": "/api/admin/erp/purchases",
+      "destination": "/api/admin/erp/sales?type=purchases"
+    },
+    {
+      "source": "/api/admin/erp/expenses",
+      "destination": "/api/admin/erp/products?type=expenses"
+    },
+    {
+      "source": "/api/admin/erp/erpsettings",
+      "destination": "/api/admin/settings?type=erp"
+    },
+    {
+      "source": "/api/admin/seo",
+      "destination": "/api/admin/settings?type=seo"
+    },
+    {
+      "source": "/api/admin/inventory",
+      "destination": "/api/admin/settings?type=inventory"
+    },
+    {
+      "source": "/api/admin/brands",
+      "destination": "/api/settings?type=brands"
+    },
+    {
+      "source": "/api/admin/indexnow",
+      "destination": "/api/admin/settings?type=indexnow"
+    }
+  ]
+}
